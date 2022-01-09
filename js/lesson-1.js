@@ -1,17 +1,15 @@
+// Показывает число категорий
 const listWithClass = document.querySelectorAll('.item');
 console.log('Number of categories: ', listWithClass.length);
 
-// for (let index = 0; index < array.length; index++) {
-//     const element = array[index];
-    
-// }
+// Показывает название и часло элементов в категории
 listWithClass.forEach(  el => { 
 
-    // console.log(el)
-    // el.getAttribute('h2');
-    // console.log(el.getAttribute('h2'))
-    console.log(el.childNodes)
+    // Показывает название категории
+    console.log('Categories: ', el.childNodes[1].textContent)
 
-    el.childNodes.find()
+    // Показывает количество элементов в категории
+    console.log('Elements: ', el.childNodes[3]);
+    
 
 })
