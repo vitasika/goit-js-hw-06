@@ -16,3 +16,8 @@ const ingredients = [
   'Condiments',
 ];
 
+const titleEl = document.createElement('li');
+titleEl.classList.add('item');
+titleEl.textContent = '({... ingredients})'
+
+console.log(titleEl);
