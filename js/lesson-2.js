@@ -29,4 +29,11 @@ const ingredients = [
   titleEl.classList.add('item');
   titleEl.textContent = ingredients[0]
 
-  console.log(titleEl);
+console.log(titleEl);
+  
+
+
+
+ingredients.forEach(function (ingredient, index) {
+  console.log(`Индекс ${index}, значение ${ingredient}`);  
+});
