@@ -16,10 +16,17 @@ const ingredients = [
   'Condiments',
 ];
 
-console.log(ingredients);
+// const elements = [];
+// for (let i = 0; i < ingredients.length; i += 1) {
+//   const option = ingredients[i];
+//   const titleEl = document.createElement('li');
+//   titleEl.classList.add('item');
+//   titleEl.textContent = option.ingredients[i]  
+//   elements.push(titleEl);
+// }
 
-const titleEl = document.createElement('li');
-titleEl.classList.add('item');
-titleEl.textContent = ingredients[0]
+  const titleEl = document.createElement('li');
+  titleEl.classList.add('item');
+  titleEl.textContent = ingredients[0]
 
-console.log(titleEl);
+  console.log(titleEl);
