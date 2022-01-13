@@ -26,13 +26,10 @@ const totalListIngredient = ingredients.map(ingredient => {
   console.log(titleEl);
 
   
-  return titleEl;
-
-  
+  return titleEl;  
 });
 
 //добавляю все гроздь нв страницу html
-
 firstEl.append(...totalListIngredient);
 
 // конец задания
