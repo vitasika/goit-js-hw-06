@@ -31,7 +31,13 @@ const totalListIngredient = ingredients.map(ingredient => {
   
 });
 
+//добавляю все гроздь нв страницу html
+
 firstEl.append(...totalListIngredient);
+
+// конец задания
+
+
 
 
 // const titleEl = document.createElement('li');
