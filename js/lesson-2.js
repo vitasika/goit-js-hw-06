@@ -20,13 +20,19 @@ const firstEl = document.querySelector('#ingredients');
 
 //делаю цикл map на переборку масива и добавление li и class
 const totalListIngredient = ingredients.map(ingredient => {  
-  cоnst titleEl = document.createElement('li');
+  const titleEl = document.createElement('li');
   titleEl.classList.add('item');
   titleEl.textContent = ingredient;
-  return ingredient;
+  console.log(titleEl);
+
+  
+  return titleEl;
+
+  
 });
 
-console.log(totalListIngredient);
+firstEl.append(totalListIngredient);
+
 
 // const titleEl = document.createElement('li');
 // titleEl.classList.add('item');
@@ -34,5 +40,3 @@ console.log(totalListIngredient);
 
 // console.log(titleEl);
   
-
-firstEl.append(totalListIngredient);
