@@ -15,25 +15,24 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
+//нашел элемент по id в html разметке
+const firstEl = document.querySelector('#ingredients');
 
-// const elements = [];
-// for (let i = 0; i < ingredients.length; i += 1) {
-//   const option = ingredients[i];
-//   const titleEl = document.createElement('li');
-//   titleEl.classList.add('item');
-//   titleEl.textContent = option.ingredients[i]  
-//   elements.push(titleEl);
-// }
-
-  const titleEl = document.createElement('li');
+//делаю цикл map на переборку масива и добавление li и class
+const totalListIngredient = ingredients.map(ingredient => {  
+  cоnst titleEl = document.createElement('li');
   titleEl.classList.add('item');
-  titleEl.textContent = ingredients[0]
+  titleEl.textContent = ingredient;
+  return ingredient;
+});
 
-console.log(titleEl);
+console.log(totalListIngredient);
+
+// const titleEl = document.createElement('li');
+// titleEl.classList.add('item');
+// titleEl.textContent = ingredients[0]
+
+// console.log(titleEl);
   
 
-
-
-ingredients.forEach(function (ingredient, index) {
-  console.log(`Индекс ${index}, значение ${ingredient}`);  
-});
+firstEl.append(totalListIngredient);
