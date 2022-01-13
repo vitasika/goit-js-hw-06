@@ -31,7 +31,7 @@ const totalListIngredient = ingredients.map(ingredient => {
   
 });
 
-firstEl.append(totalListIngredient);
+firstEl.append(...totalListIngredient);
 
 
 // const titleEl = document.createElement('li');
