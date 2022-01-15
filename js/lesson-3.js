@@ -49,7 +49,7 @@ const totalImgList = images.map(image => `<li class="imgflex"><img src="${ image
 cardGaleryList.insertAdjacentHTML("beforeend", totalImgList);
 
 
-
+// Пробы разного
 // const totalImgList = images.map(image => '<li class='imgflex'><img src='${ image.url }' alt='${image.alt}' width='320'></li>')
 
 // const markup = images.map(image => `<li class="gallery-item flex-container"><img src="${image.url}" alt="${image.alt}" width="200"></li>`).join("");
