@@ -42,8 +42,7 @@ const cardGaleryList = document.querySelector(".gallery");
 console.log(cardGaleryList);
 
 //делаю цикл map на переборку масива и добавление li через шаблонную строку
-const totalImgList = images.map(image => `<li class="imgflex"><img src="${ image.url }" alt="${ image.alt }" width="200"></li>`).join("");
-
+const totalImgList = images.map(image => `<li class="imgflex"><img src="${ image.url }" alt="${ image.alt }"></li>`).join("");
 
 
 //добавляю все в страницу html
