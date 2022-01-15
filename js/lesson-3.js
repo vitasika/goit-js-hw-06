@@ -1,7 +1,8 @@
 // Напиши скрипт для создания галереи изображений по массиву данных. В HTML есть список ul.gallery.
 
 // <ul class="gallery"></ul>
-// Используй массив объектов images для создания элементов <img> вложенных в <li>. Для создания разметки используй шаблонные строки и метод insertAdjacentHTML().
+// Используй массив объектов images для создания элементов <img> вложенных в <li>. Для создания разметки используй 
+// шаблонные строки и метод insertAdjacentHTML().
 
 // Все элементы галереи должны добавляться в DOM за одну операцию вставки.
 // Добавь минимальное оформление галереи флексбоксами или гридами через CSS классы.
@@ -35,23 +36,21 @@ const images = [
   },
 ];
 
-console.log(images);
 //нашел элемент по классу в html разметке
 const cardGaleryList = document.querySelector(".gallery");
 
 console.log(cardGaleryList);
 
-//делаю цикл map на переборку масива и добавление li и class
-const totalImgList = images.map(image => {  
-  const titleElImg = document.createElement('li');
-  titleEl.classList.add('item');
-  titleEl.textContent = image;
-  console.log(titleElImg);
+//делаю цикл map на переборку масива и добавление li через шаблонную строку
+const totalImgList = images.map(image => `<li class="imgflex"><img src="${ image.url }" alt="${ image.alt }" width="200"></li>`).join("");
 
-  
-  return titleElImg;  
-});
 
-//добавляю все гроздь нв страницу html
-cardGaleryList.append(...totalImgList);
 
+//добавляю все в страницу html
+cardGaleryList.insertAdjacentHTML("beforeend", totalImgList);
+
+
+
+// const totalImgList = images.map(image => '<li class='imgflex'><img src='${ image.url }' alt='${image.alt}' width='320'></li>')
+
+// const markup = images.map(image => `<li class="gallery-item flex-container"><img src="${image.url}" alt="${image.alt}" width="200"></li>`).join("");

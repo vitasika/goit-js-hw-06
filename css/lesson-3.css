@@ -1,4 +1,14 @@
 .gallery{
-    font-size: 26px;
-    color: green;
+    list-style: none;
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.imgflex{
+    margin: 15px;
+}
+
+.imgflex > img {
+    /* width: 320px; */
 }
