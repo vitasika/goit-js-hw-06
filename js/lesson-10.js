@@ -52,11 +52,11 @@ buttonCreate.addEventListener('click', buttonCreateListener)
 
 // Функция добавления
 function buttonCreateListener() {
-    let sizeEl = 30;
+    let sizeEl = 30; // размер первого блока по заданию
     for (let index = 1; index < inputNumber.valueAsNumber; index++) {    
         // const countIdDiv = document.querySelectorAll('.block').length;
-        const iDiv = document.createElement('div');
-        iDiv.id = 'block' + index;
+        const iDiv = document.createElement('div'); // создаем div в html
+        iDiv.id = 'block' + index; // добавляем id в div
         // iDiv.className = 'block';
         iDiv.textContent = 'amount' + index;
         iDiv.style.background = getRandomHexColor();
