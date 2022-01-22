@@ -17,11 +17,11 @@ function getRandomHexColor() {
 // const formEl = document.querySelector(`.widget`);
 // console.log(formEl);
 
-const buttonEl = document.querySelector(`.change-color`);
+const buttonEl = document.querySelector(`.change-color`); // ищем строку в html по классу
 //console.log(formEl);
-const spanEl = document.querySelector(`.color`);
+const spanEl = document.querySelector(`.color`); // ищем строку в html по классу
 // console.log(spanEl);
-const bodyRef = document.querySelector("body");
+const bodyRef = document.querySelector("body"); // ищем строку в html по классу
 // console.log(bodyRef);
 
 // Вешаем слушателя на formEl (submit)
